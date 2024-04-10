@@ -1,0 +1,273 @@
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font: normal normal bold Open Sans;
+  line-height: 1.5;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s all ease;
+}
+
+a:hover {
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-heading {
+  font-family: "Open Sans", normal, bold;
+  color: #000;
+}
+
+.container {
+  z-index: 2;
+  position: relative;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+section {
+  overflow: hidden;
+}
+
+.section {
+  padding: 7rem 0;
+}
+
+.section-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(-45deg, #3db3c5, #274685);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.logo img {
+  top: 19px;
+  left: 47px;
+  width: 106px;
+  height: 106px;
+  /* UI Properties */
+  background: transparent url('img/logo-blue-160x160-1.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.button {
+  float:right;
+  position: relative;
+  width: 164px;
+  height: 32px;
+  top: 2em;
+  cursor: pointer;
+  color: #fff;
+  background-color: #2979EC;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 5px;
+  border-radius: 18px;
+}
+.button a{
+  color:#fff;
+  text-transform: uppercase;
+}
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero-section {
+  background: #EBF4FF;
+  position: relative;
+
+}
+.hero-section,
+.hero-section>.container>.row {
+  height: 100vh;
+  min-height: 500px;
+}
+
+.hero-section.inner-page {
+  height: 60vh;
+  min-height: 0;
+}
+
+.hero-section.inner-page .hero-text {
+  transform: translateY(-150px);
+  margin-top: -120px;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-section.inner-page .hero-text {
+    margin-top: -80px;
+  }
+}
+
+.hero-section h1 {
+  text-align: left;
+  font: normal normal normal 50px/52px Open Sans;
+  letter-spacing: 0px;
+  color: #000000;
+}
+.hero-section h2 {
+  text-align: left;
+  font: normal normal bold 50px/52px Open Sans;
+  letter-spacing: 0px;
+  color: #000000;
+}
+.hero-section h3 {
+  text-align: left;
+  font: normal normal normal 40px/45px Open Sans;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hero-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hero-section h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+.hero-section p {
+  font-size: 18px;
+  color: #000;
+}
+
+/* CTA Section */
+.cta-section {
+  background: #0A459E;
+  color: #fff;
+}
+
+.cta-section h2 {
+  padding: 10px;
+  /* UI Properties */
+  text-align: center;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+}
+
+#myBtn {
+  width: 164px;
+  height: 32px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 16px;
+  color: #0A459E;
+  background-color: #FFBE3C;
+  border-radius: 18px;
+
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  color:#000;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #0A459E;
+  color: #fff;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #0A459E;
+  color:#fff;
+}

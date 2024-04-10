@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Landing Page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  <!-- bootstrap CSS Files -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- ======= Hero Section ======= -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="logo">
+      <a href="index.html"><img src="assets/img/logo-blue-160x160-1.png" alt="" class="img-fluid"></a>
+  <div class="button"><a href="#bottom">Contact us</a></div></div>
+      <div class="row align-items-center">
+        <div class="col-12 hero-text-image">
+          <div class="row">
+            <div class="col-lg-8 text-center text-lg-start">
+              <h1>Integrated </h1>
+              <h2>Marketing Services</h2>
+              <p class="mb-5" data-aos="fade-right" data-aos-delay="100">We turn your marketing plans into action by building on your ideas and executing initiatives alongside you and your team. Get a complete department that can pivot to different areas of marketing based on your needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= Home Section ======= -->
+    <section class="section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 me-auto">
+            <h3 class="mb-4">We’re experts with <span style="font-weight:bold;">modern marketing tools</span>, so you don’t have to be!</h3>
+            <p class="mb-4">With hands-on experience in B2B’s most innovative apps and tools, we take a data-driven approach to continually improve prospect engagement. Whether we work directly out of your platform or provide our insights manually, you always get full visibility into the process.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="assets/img/Marketing_Tools.svg" alt="Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 ms-auto order-2">
+            <h2 class="mb-4">
+              <span style="font-weight:bold;">The best way</span> to build a marketing team</h2>
+            <p class="mb-4">With EBQ, you’re not just hiring a marketing specialist. You’re getting an entire marketing department at a fraction of the cost and effort of hiring internally. For each project, we provide: a Success Manager to drive high-level strategy, a Project Manager to oversee day-to-day operations, and one or more Specialists working diligently to amplify your brand.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="assets/img/Complete-Department-Marketing.png" alt="Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CTA Section ======= -->
+    <a id="bottom"></a>
+    <section class="section cta-section">
+      <div class="container">
+        <div class="row align-items-center">
+<div align="center">
+      <h2>Looking to take your <span style="font-weight:bold;">marketing to the next level?</span></h2>
+            <!-- Trigger/Open The Modal -->
+<button id="myBtn">Contact Us</button></div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>TADA!</p>
+      <p>PRETTY NEAT HU!</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Footer</h3>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+          </div>
+
+
+      </div>
+    </section><!-- End CTA Section -->
+
+  </main><!-- End #main -->
+
+</body>
+
+</html>
